@@ -41,7 +41,7 @@ export class AnalyzeGapsBrain {
             Respond ONLY with a JSON object in this exact format:
             {{
                 "knowledgeGap": "detailed description of what information is missing or needs clarification",
-                "followUpQuery": "specific search query that would help address this gap"
+                "followUpQuery": "specific search query that would help address this gap using only 3 search terms"
             }}`
         );
     }

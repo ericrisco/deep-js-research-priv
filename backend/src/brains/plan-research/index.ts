@@ -24,6 +24,7 @@ export class PlanResearchBrain {
             2. Include key concepts that must be covered
             3. Focus on academic and professional sources
             4. Think about what would make an excellent, in-depth research document
+            5. Use only a 3 search terms
             
             <query>
             {researchQuery}
