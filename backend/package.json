@@ -1,0 +1,50 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Professional Node.js TypeScript Express API with LangChain",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint . --ext .ts",
+    "test:plan": "ts-node src/scripts/test-plan-research.ts",
+    "test:tavily": "ts-node src/scripts/test-tavily.ts",
+    "test:summarize": "ts-node src/scripts/test-summarize.ts",
+    "test:gaps": "ts-node src/scripts/test-gaps.ts",
+    "test:document": "ts-node src/scripts/test-document.ts",
+    "test:structure": "ts-node src/scripts/test-structure.ts",
+    "test:graph": "ts-node src/scripts/test-graph.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/community": "^0.0.32",
+    "@langchain/core": "^0.2.21",
+    "@langchain/langgraph": "^0.0.8",
+    "@langchain/ollama": "^0.2.0",
+    "@langchain/openai": "^0.0.14",
+    "@tavily/core": "^0.3.1",
+    "@types/ws": "^8.5.14",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.11.24",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "eslint": "^8.57.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
